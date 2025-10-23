@@ -1,0 +1,500 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": 609,
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "F431A - If I may have it when it's dead"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Manuscript"
+        ]
+      },
+      "value": {
+        "en": [
+          " About autumn 1862, in Fascicle 15 (<b>h</b> 142).  "
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Fascicle"
+        ]
+      },
+      "value": {
+        "en": [
+          "15 - 9"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Notes"
+        ]
+      },
+      "value": {
+        "en": [
+          " About autumn 1862, in Fascicle 15 (h142).  "
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Textual Notes"
+        ]
+      },
+      "value": {
+        "en": [
+          "2 so -] now -  <br>6 Bliss I cannot weigh -] Wealth I cannot weigh. &#x2022; Right [I cannot weigh.]  <br>8 own] hold  <br>14 Bald] Blank -  <br>20 across] it seemed  <br>21 notice] speak to -  <br>26 come] seem  <br>27 Coveting] eagerness -  <br>28 stroke] touch &#x2022; greet  <br>29 Outvisions] [Out]fables - <br /><em>Division</em>   <br>1 it's  |  <br>3 Breath  |  <br>5 the  |  <br>7 in  |  <br>11 Death -  |  <br>13 Thee -  ||  <br>14 Bald  |  <br>15 first -  |  <br>16 stopped  |  <br>17 me -  |  <br>18 sleepy -  |  <br>19 and  |  <br>20 across -  |  <br>21 could'st  |  <br>23 when  |  <br>23 Deep  ||  <br>24 back  |<br> 26 come  |  <br>28 stroke  | "
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Publications"
+        ]
+      },
+      "value": {
+        "en": [
+          " <em>Poems</em> (1896), 182, stanzas 1-3, with the alternatives for line 8 adopted. <em>BM</em> (1945), 165, stanzas 4-7, with the alternatives adopted for lines 14, 21, 26, 27, 28 (\"touch\"), from an incomplete transcript of <em>A</em> (<b>a t</b>r352). <em>Poems</em> (1955), 441-42; <em>CP</em> (1960), 281-82. <em>MB</em> (1981), 321-23, in facsimile. (J577) "
+        ]
+      }
+    }
+  ],
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Copyright & Terms of Use"
+      ]
+    },
+    "value": {
+      "en": [
+        "<p>Images of manuscripts, attribution information, and transcriptions displayed within this site (the “ED Material”) are governed by a Creative Commons Attribution-Non-Commercial-NoDerivs 3.0 Unported License (CC BY-NC-ND 3.0) (available at <a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/legalcode\">http://creativecommons.org/licenses/by-nc-nd/3.0/legalcode</a>).</p><p>You do not need permission to use ED Material for personal research, in-class teaching purposes, school projects and assignments, blog posts, or other non-commercial uses. ED Material incorporated in EDA must be used with accompanying credit line to the owning institution, and may not be copied or provided to others without this information. For images of manuscripts, this information is located in the credit line accompanying the image. You do not need permission to link to EDA or to individual items within EDA. We prefer that you link to the home page at <a href=\"http://edickinson.org\">http://edickinson.org</a>, and that links to individual items within the EDA be accompanied by a link to the homepage.</p><p>Commercial use: For images of manuscripts, please contact the institution listed as holding the original manuscript. Contact information can be found under <a href=\"/team\">Partners &amp; Credits</a>. For reuse of edited texts, as presented in the Johnson or Franklin volumes, please contact Harvard University Press at <a href=\"http://www.hup.harvard.edu/rights/\">http://www.hup.harvard.edu/rights/</a>.</p><p>Harvard and the other contributors of ED Material make the EDA site and its content available free of charge and disclaim all warranties of any kind (express, implied, or otherwise) regarding the site and its content. Harvard and the other contributors make no warranties as to the accuracy, completeness, currency or usefulness of any content on the EDA site, and do not warrant that your use of the content will not infringe or violate the rights of others. Your use of the EDA site and its content is at your own sole risk. In no event shall Harvard or any such contributor be liable to you – in contract, tort (including negligence) or otherwise – for any consequential, special, general, incidental, direct, indirect or other damages or losses of any kind arising out of your use of the site or any of its content. As used in this paragraph, the term “Harvard” includes the corporate entity President and Fellows of Harvard College and its affiliates, governing board members, officers, employees, and agents.</p>"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "canvas/3945",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Houghton Library - (142a) If I may have it, when it's dead, J577, Fr431"
+        ]
+      },
+      "width": 1000,
+      "height": 1000,
+      "items": [
+        {
+          "id": "canvas/3945/annotation_page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "canvas/3945/annotation_page/1/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "data/ms_am_1118_3_142_0001.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 1000,
+                "height": 1000
+              },
+              "target": "canvas/3945"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "canvas/3945/annotation_page/1/annotation/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "canvas/3945/annotation_page/1/annotation/1/transcription/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "Text",
+                "language": "en",
+                "format": "text/html",
+                "value": "<div class=\"work-body\" data-exhibit=\"emily-dickinson-archive\" data-edition=\"Franklin Variorum 1998\">\n<h3>F431A - If I may have it when it's dead </h3>\n<p class=\"stanza linebreak-emily\" data-number=\"0\">\n<span class=\"line\" data-line=\"1\">If I may have it, when it's<br class=\"emily\"> dead,<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"2\">I'll be contented - so - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"3\">If just as soon as Breath<br class=\"emily\"> is out <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"4\">It shall belong to me - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"1\">\n<span class=\"line\" data-line=\"5\">Until they lock it in the<br class=\"emily\"> Grave,<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"6\">'Tis <ins class=\"alternate\">Wealth I cannot weigh. • Right [I cannot weigh.]</ins>\n Bliss I cannot weigh - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"7\">For tho' they lock Thee in<br class=\"emily\"> the Grave, <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"8\">Myself - can <ins class=\"alternate\">hold</ins>\n own the key - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"2\">\n<span class=\"line\" data-line=\"9\">Think of it Lover! I and Thee <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"10\">Permitted - face to face to be -<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"11\">After a Life - a Death -<br class=\"emily\"> we'll say - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"12\">For Death was That - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"13\">And This - is Thee -<span class=\"page-break\"></span>\n <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"3\">\n<span class=\"line\" data-line=\"14\">I'll tell Thee All - how <ins class=\"alternate\">Blank -</ins>\n Bald<br class=\"emily\"> it grew - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"15\">How Midnight felt, at first -<br class=\"emily\"> to me -<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"16\">How all the Clocks stopped<br class=\"emily\"> in the World - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"17\">And Sunshine pinched me -<br class=\"emily\"> 'Twas so cold - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"4\">\n<span class=\"line\" data-line=\"18\">Then how the Grief got sleepy -<br class=\"emily\"> some - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"19\">As if my soul were deaf and<br class=\"emily\"> dumb - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"20\">Just making signs - <ins class=\"alternate\">it seemed</ins>\n across -<br class=\"emily\"> to Thee -<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"21\">That this way - thou could'st<br class=\"emily\"> <ins class=\"alternate\">speak to -</ins>\n notice me - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"5\">\n<span class=\"line\" data-line=\"22\">I'll tell you how I tried to keep <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"23\">A smile, to show you, when<br class=\"emily\"> this Deep<span class=\"page-break\"></span>\n <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"24\">All Waded - We look back<br class=\"emily\"> for Play, <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"25\">At those Old Times - in Calvary.<br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"6\">\n<span class=\"line\" data-line=\"26\">Forgive me, if the Grave <ins class=\"alternate\">seem</ins>\n come<br class=\"emily\"> slow - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"27\">For <ins class=\"alternate\">eagerness -</ins>\n Coveting to look at Thee - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"28\">Forgive me, if to <ins class=\"alternate\">touch • greet</ins>\n stroke<br class=\"emily\"> thy frost <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"29\"> <ins class=\"alternate\">[Out]fables -</ins>\nOutvisions Paradise!  <br class=\"emily author\"/></span>\n</p>\n</div>\n"
+              },
+              "target": "canvas/3945"
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Credits"
+            ]
+          },
+          "value": {
+            "en": [
+              "<a href=\"https://library.harvard.edu/collections/emily-dickinson-collection\" target=\"_blank\">Houghton Library, Harvard University,  Cambridge, MA</a><br />Dickinson, Emily, 1830-1886.  Poems: Packet XXVI, Fascicle 15 (part). Includes 8 poems, written in ink, dated ca. 1862.<br />Houghton Library - (142a) If I may have it, when it's dead, J577, Fr431<br /><strong>Publication History</strong><br /><em>Poems</em> (1896), 182, stanzas 1-3, with the alternatives for line 8 adopted. <em>BM</em> (1945), 165, stanzas 4-7, with the alternatives adopted for lines 14, 21, 26, 27, 28 (\"touch\"), from an incomplete transcript of <em>A</em> (<b>a t</b>r352). <em>Poems</em> (1955), 441-42; <em>CP</em> (1960), 281-82. <em>MB</em> (1981), 321-23, in facsimile. (J577). Franklin Variorum 1998 (F431A).<br /> -<em>History from Franklin Variorum 1998</em><br /><br />Emily Dickinson Archive<br />http://www.edickinson.org<br />Copyright & Terms of Use:<br />CC BY-NC-ND 3.0<br />http://www.edickinson.org/terms"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Imported"
+            ]
+          },
+          "value": {
+            "en": [
+              "2013-10-21 13:02:37 -0400"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Order"
+            ]
+          },
+          "value": {
+            "en": [
+              "5"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Order Label"
+            ]
+          },
+          "value": {
+            "en": [
+              "(142a) If I may have it, when it's dead, J577, Fr431"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Label"
+            ]
+          },
+          "value": {
+            "en": [
+              "(142a) If I may have it, when it's dead, J577, Fr431"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Filename"
+            ]
+          },
+          "value": {
+            "en": [
+              "ms_am_1118_3_142_0001"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Download Image"
+            ]
+          },
+          "value": {
+            "en": [
+              "<a href=\"https://www.edickinson.org/images/3945/download\">Download</a>"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "canvas/3946",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Houghton Library - (142a) If I may have it, when it's dead, J577, Fr431"
+        ]
+      },
+      "width": 1000,
+      "height": 1000,
+      "items": [
+        {
+          "id": "canvas/3946/annotation_page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "canvas/3946/annotation_page/1/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "data/ms_am_1118_3_142_0002.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 1000,
+                "height": 1000
+              },
+              "target": "canvas/3946"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "canvas/3946/annotation_page/1/annotation/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "canvas/3946/annotation_page/1/annotation/1/transcription/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "Text",
+                "language": "en",
+                "format": "text/html",
+                "value": "<div class=\"work-body\" data-exhibit=\"emily-dickinson-archive\" data-edition=\"Franklin Variorum 1998\">\n<h3>F431A - If I may have it when it's dead </h3>\n<p class=\"stanza linebreak-emily\" data-number=\"0\">\n<span class=\"line\" data-line=\"1\">If I may have it, when it's<br class=\"emily\"> dead,<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"2\">I'll be contented - so - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"3\">If just as soon as Breath<br class=\"emily\"> is out <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"4\">It shall belong to me - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"1\">\n<span class=\"line\" data-line=\"5\">Until they lock it in the<br class=\"emily\"> Grave,<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"6\">'Tis <ins class=\"alternate\">Wealth I cannot weigh. • Right [I cannot weigh.]</ins>\n Bliss I cannot weigh - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"7\">For tho' they lock Thee in<br class=\"emily\"> the Grave, <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"8\">Myself - can <ins class=\"alternate\">hold</ins>\n own the key - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"2\">\n<span class=\"line\" data-line=\"9\">Think of it Lover! I and Thee <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"10\">Permitted - face to face to be -<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"11\">After a Life - a Death -<br class=\"emily\"> we'll say - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"12\">For Death was That - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"13\">And This - is Thee -<span class=\"page-break\"></span>\n <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"3\">\n<span class=\"line\" data-line=\"14\">I'll tell Thee All - how <ins class=\"alternate\">Blank -</ins>\n Bald<br class=\"emily\"> it grew - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"15\">How Midnight felt, at first -<br class=\"emily\"> to me -<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"16\">How all the Clocks stopped<br class=\"emily\"> in the World - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"17\">And Sunshine pinched me -<br class=\"emily\"> 'Twas so cold - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"4\">\n<span class=\"line\" data-line=\"18\">Then how the Grief got sleepy -<br class=\"emily\"> some - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"19\">As if my soul were deaf and<br class=\"emily\"> dumb - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"20\">Just making signs - <ins class=\"alternate\">it seemed</ins>\n across -<br class=\"emily\"> to Thee -<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"21\">That this way - thou could'st<br class=\"emily\"> <ins class=\"alternate\">speak to -</ins>\n notice me - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"5\">\n<span class=\"line\" data-line=\"22\">I'll tell you how I tried to keep <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"23\">A smile, to show you, when<br class=\"emily\"> this Deep<span class=\"page-break\"></span>\n <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"24\">All Waded - We look back<br class=\"emily\"> for Play, <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"25\">At those Old Times - in Calvary.<br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"6\">\n<span class=\"line\" data-line=\"26\">Forgive me, if the Grave <ins class=\"alternate\">seem</ins>\n come<br class=\"emily\"> slow - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"27\">For <ins class=\"alternate\">eagerness -</ins>\n Coveting to look at Thee - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"28\">Forgive me, if to <ins class=\"alternate\">touch • greet</ins>\n stroke<br class=\"emily\"> thy frost <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"29\"> <ins class=\"alternate\">[Out]fables -</ins>\nOutvisions Paradise!  <br class=\"emily author\"/></span>\n</p>\n</div>\n"
+              },
+              "target": "canvas/3946"
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Credits"
+            ]
+          },
+          "value": {
+            "en": [
+              "<a href=\"https://library.harvard.edu/collections/emily-dickinson-collection\" target=\"_blank\">Houghton Library, Harvard University,  Cambridge, MA</a><br />Dickinson, Emily, 1830-1886.  Poems: Packet XXVI, Fascicle 15 (part). Includes 8 poems, written in ink, dated ca. 1862.<br />Houghton Library - (142a) If I may have it, when it's dead, J577, Fr431<br /><strong>Publication History</strong><br /><em>Poems</em> (1896), 182, stanzas 1-3, with the alternatives for line 8 adopted. <em>BM</em> (1945), 165, stanzas 4-7, with the alternatives adopted for lines 14, 21, 26, 27, 28 (\"touch\"), from an incomplete transcript of <em>A</em> (<b>a t</b>r352). <em>Poems</em> (1955), 441-42; <em>CP</em> (1960), 281-82. <em>MB</em> (1981), 321-23, in facsimile. (J577). Franklin Variorum 1998 (F431A).<br /> -<em>History from Franklin Variorum 1998</em><br /><br />Emily Dickinson Archive<br />http://www.edickinson.org<br />Copyright & Terms of Use:<br />CC BY-NC-ND 3.0<br />http://www.edickinson.org/terms"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Imported"
+            ]
+          },
+          "value": {
+            "en": [
+              "2013-10-21 13:02:38 -0400"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Order"
+            ]
+          },
+          "value": {
+            "en": [
+              "6"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Order Label"
+            ]
+          },
+          "value": {
+            "en": [
+              "(142a) If I may have it, when it's dead, J577, Fr431"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Label"
+            ]
+          },
+          "value": {
+            "en": [
+              "(142a) If I may have it, when it's dead, J577, Fr431"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Filename"
+            ]
+          },
+          "value": {
+            "en": [
+              "ms_am_1118_3_142_0002"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Download Image"
+            ]
+          },
+          "value": {
+            "en": [
+              "<a href=\"https://www.edickinson.org/images/3946/download\">Download</a>"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "canvas/3947",
+      "type": "Canvas",
+      "label": {
+        "en": [
+          "Houghton Library - (142a) If I may have it, when it's dead, J577, Fr431"
+        ]
+      },
+      "width": 1000,
+      "height": 1000,
+      "items": [
+        {
+          "id": "canvas/3947/annotation_page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "canvas/3947/annotation_page/1/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "data/ms_am_1118_3_142_0003.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 1000,
+                "height": 1000
+              },
+              "target": "canvas/3947"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "canvas/3947/annotation_page/1/annotation/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "canvas/3947/annotation_page/1/annotation/1/transcription/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "Text",
+                "language": "en",
+                "format": "text/html",
+                "value": "<div class=\"work-body\" data-exhibit=\"emily-dickinson-archive\" data-edition=\"Franklin Variorum 1998\">\n<h3>F431A - If I may have it when it's dead </h3>\n<p class=\"stanza linebreak-emily\" data-number=\"0\">\n<span class=\"line\" data-line=\"1\">If I may have it, when it's<br class=\"emily\"> dead,<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"2\">I'll be contented - so - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"3\">If just as soon as Breath<br class=\"emily\"> is out <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"4\">It shall belong to me - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"1\">\n<span class=\"line\" data-line=\"5\">Until they lock it in the<br class=\"emily\"> Grave,<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"6\">'Tis <ins class=\"alternate\">Wealth I cannot weigh. • Right [I cannot weigh.]</ins>\n Bliss I cannot weigh - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"7\">For tho' they lock Thee in<br class=\"emily\"> the Grave, <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"8\">Myself - can <ins class=\"alternate\">hold</ins>\n own the key - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"2\">\n<span class=\"line\" data-line=\"9\">Think of it Lover! I and Thee <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"10\">Permitted - face to face to be -<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"11\">After a Life - a Death -<br class=\"emily\"> we'll say - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"12\">For Death was That - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"13\">And This - is Thee -<span class=\"page-break\"></span>\n <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"3\">\n<span class=\"line\" data-line=\"14\">I'll tell Thee All - how <ins class=\"alternate\">Blank -</ins>\n Bald<br class=\"emily\"> it grew - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"15\">How Midnight felt, at first -<br class=\"emily\"> to me -<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"16\">How all the Clocks stopped<br class=\"emily\"> in the World - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"17\">And Sunshine pinched me -<br class=\"emily\"> 'Twas so cold - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"4\">\n<span class=\"line\" data-line=\"18\">Then how the Grief got sleepy -<br class=\"emily\"> some - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"19\">As if my soul were deaf and<br class=\"emily\"> dumb - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"20\">Just making signs - <ins class=\"alternate\">it seemed</ins>\n across -<br class=\"emily\"> to Thee -<br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"21\">That this way - thou could'st<br class=\"emily\"> <ins class=\"alternate\">speak to -</ins>\n notice me - <br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"5\">\n<span class=\"line\" data-line=\"22\">I'll tell you how I tried to keep <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"23\">A smile, to show you, when<br class=\"emily\"> this Deep<span class=\"page-break\"></span>\n <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"24\">All Waded - We look back<br class=\"emily\"> for Play, <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"25\">At those Old Times - in Calvary.<br class=\"emily author\"/></span>\n</p>\n<p class=\"stanza linebreak-emily\" data-number=\"6\">\n<span class=\"line\" data-line=\"26\">Forgive me, if the Grave <ins class=\"alternate\">seem</ins>\n come<br class=\"emily\"> slow - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"27\">For <ins class=\"alternate\">eagerness -</ins>\n Coveting to look at Thee - <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"28\">Forgive me, if to <ins class=\"alternate\">touch • greet</ins>\n stroke<br class=\"emily\"> thy frost <br class=\"emily author\"/></span>\n<span class=\"line\" data-line=\"29\"> <ins class=\"alternate\">[Out]fables -</ins>\nOutvisions Paradise!  <br class=\"emily author\"/></span>\n</p>\n</div>\n"
+              },
+              "target": "canvas/3947"
+            }
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Credits"
+            ]
+          },
+          "value": {
+            "en": [
+              "<a href=\"https://library.harvard.edu/collections/emily-dickinson-collection\" target=\"_blank\">Houghton Library, Harvard University,  Cambridge, MA</a><br />Dickinson, Emily, 1830-1886.  Poems: Packet XXVI, Fascicle 15 (part). Includes 8 poems, written in ink, dated ca. 1862.<br />Houghton Library - (142a) If I may have it, when it's dead, J577, Fr431<br /><strong>Publication History</strong><br /><em>Poems</em> (1896), 182, stanzas 1-3, with the alternatives for line 8 adopted. <em>BM</em> (1945), 165, stanzas 4-7, with the alternatives adopted for lines 14, 21, 26, 27, 28 (\"touch\"), from an incomplete transcript of <em>A</em> (<b>a t</b>r352). <em>Poems</em> (1955), 441-42; <em>CP</em> (1960), 281-82. <em>MB</em> (1981), 321-23, in facsimile. (J577). Franklin Variorum 1998 (F431A).<br /> -<em>History from Franklin Variorum 1998</em><br /><br />Emily Dickinson Archive<br />http://www.edickinson.org<br />Copyright & Terms of Use:<br />CC BY-NC-ND 3.0<br />http://www.edickinson.org/terms"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Imported"
+            ]
+          },
+          "value": {
+            "en": [
+              "2013-10-21 13:02:38 -0400"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Order"
+            ]
+          },
+          "value": {
+            "en": [
+              "7"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Order Label"
+            ]
+          },
+          "value": {
+            "en": [
+              "(142a) If I may have it, when it's dead, J577, Fr431"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Label"
+            ]
+          },
+          "value": {
+            "en": [
+              "(142a) If I may have it, when it's dead, J577, Fr431"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Filename"
+            ]
+          },
+          "value": {
+            "en": [
+              "ms_am_1118_3_142_0003"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Download Image"
+            ]
+          },
+          "value": {
+            "en": [
+              "<a href=\"https://www.edickinson.org/images/3947/download\">Download</a>"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
