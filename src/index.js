@@ -1,9 +1,8 @@
-import EdaTranscriptionButton from "./plugins/EdaTranscriptionButton"
+
 import EdaTranscriptionPanel from "./plugins/EdaTranscriptionPanel"
-import EdaTranslationOverrideWrapper from "./plugins/EdaTranslationOverrideWrapper"
+import EdaSideBarButtonsWrapper from "./plugins/EdaSideBarButtonsWrapper"
 
 export default [
-  EdaTranslationOverrideWrapper,
-  EdaTranscriptionButton,
+  EdaSideBarButtonsWrapper,
   EdaTranscriptionPanel
 ]

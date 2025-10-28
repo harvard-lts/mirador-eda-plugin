@@ -3,6 +3,9 @@ module.exports = {
   testEnvironment: "jsdom",
   transformIgnorePatterns: ["node_modules/(?!mirador)/", "node_modules/pdiiif"],
   setupFilesAfterEnv: ["@testing-library/jest-dom", "./setupTests"],
+  moduleNameMapper: {
+    "\\.(jpg|jpeg|png|gif|svg)$": "<rootDir>/__mocks__/fileMock.js"
+  },
   //   collectCoverage: true,
   //   coverageDirectory: "coverage",
   //   verbose: true,
