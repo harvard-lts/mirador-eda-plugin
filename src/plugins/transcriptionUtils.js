@@ -16,7 +16,7 @@ const getEditionName = (html) => {
  * Transcriptions with the same edition name will be combined into a single transcription
  * @param {Object} state
  * @param {string} windowId
- * @returns {array} - empty if no transcriptions exist
+ * @returns {array} - empty if EDA no transcriptions exist
  */
 
 export const getEdaTranscription = (state, windowId) => {

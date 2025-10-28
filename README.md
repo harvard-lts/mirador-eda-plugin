@@ -10,7 +10,7 @@ A Mirador 3 plugin for displaying Emily Dickinson Archive (EDA) transcriptions w
 - **HTML Rendering**: Full support for HTML tags including `ruby`, `ins`, `em`, `strong`, `br`, and more
 - **Textual Variants**: Display alternate readings and editorial choices
 - **EDA Icon**: Custom fern ornament icon in the sidebar
-- **Smart Manifest Handling**: Automatically detects Emily Dickinson content and only shows the transcription button when relevant
+- **Smart Manifest Handling**: Automatically detects Emily Dickinson content and only shows the transcription button when relevant while hiding the default Annotations button
 
 ## Requirements
 
@@ -120,36 +120,40 @@ The development server will start at http://localhost:9000 and automatically rel
 
 ### Testing
 
-The plugin includes comprehensive tests for both Emily Dickinson and non-Emily Dickinson manifests:
+The plugin includes comprehensive tests using Jest and React Testing Library. The test suite is organized by responsibility:
 
 ```bash
 # Run all tests
 npm test
 
 # Run specific test files
-npm test -- -t "Emily Dickinson Manifest Tests"
-npm test -- -t "Non-Emily Dickinson Manifest Tests"
+npm test src/plugins/__tests__/[filename].spec.js
 ```
 
-The test suite is organized into focused test files:
-- `edaManifest.spec.js` - Tests for EDA manifest handling
-- `nonEdaManifest.spec.js` - Tests for non-EDA manifest handling
-- `EdaTranscriptionButton.spec.js` - Tests for the sidebar button component
-- `EdaTranscriptionPanel.spec.js` - Tests for the transcription panel UI
-- `transcriptionUtils.spec.js` - Tests for basic transcription extraction
+Test Files and Responsibilities:
 
-The test fixtures are well-documented and organized by edition:
-- `johnsonPoems1955Transcription.js` - Contains Johnson 1955 edition transcriptions
-- `franklinVariorum1998Transcription.js` - Contains Franklin Variorum 1998 transcriptions
-- `combinedEditionsTranscriptions.js` - Contains transcriptions for testing edition combination
+#### Component Tests
+- `EdaTranscriptionButton.spec.js` - Tests button rendering, visibility, and interaction
+- `EdaTranscriptionPanel.spec.js` - Tests panel UI, transcription display, and controls
+- `EdaSideBarButtonsWrapper.spec.js` - Tests sidebar button container and layout
 
-The test suite verifies:
-- Proper transcription extraction from manifests
-- Button visibility for different manifest types
-- Panel display and functionality
-- DOM manipulation and accessibility
-- Edition combination and separation
-- Preservation of textual variants and editorial marks
+#### Manifest Tests
+- `edaManifest.spec.js` - Tests Emily Dickinson manifest handling and transcription extraction
+- `nonEdaManifest.spec.js` - Tests non-Emily Dickinson manifest behavior
+- `transcriptionUtils.spec.js` - Tests utility functions for transcription processing
+
+#### Test Fixtures
+Organized by edition in `testFixtures/`:
+- `johnsonPoems1955Transcription.js` - Johnson 1955 edition samples
+- `franklinVariorum1998Transcription.js` - Franklin Variorum 1998 samples
+- `combinedEditionsTranscriptions.js` - Multi-edition test cases
+
+Testing Philosophy:
+- Component tests focus on user interaction and rendering
+- Manifest tests verify data handling and structure
+- Each test file has a single responsibility
+- Mocks are used judiciously to isolate functionality
+- React Testing Library encourages testing user behavior over implementation
 
 ## Demo
 
