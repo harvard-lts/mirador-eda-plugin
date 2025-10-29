@@ -62,7 +62,6 @@ const EdaTranscriptionPanel = ({ classes, transcriptions, windowId, id }) => {
       title="EDA Transcription"
       windowId={windowId}
       id={id}
-      position="right"
       paperClassName={classes.paper}
     >
       {/* handle the case when the panel is opened but no transcriptions exist */}
@@ -140,7 +139,7 @@ const EdaTranscriptionPanel = ({ classes, transcriptions, windowId, id }) => {
 
 const styles = (theme) => ({
   "@global": {
-    ".mirador-companion-window-left .react-draggable": {
+    ".react-draggable": {
       minWidth: "350px !important", // this must match the paper minWidth
     }
   },
