@@ -118,6 +118,16 @@ npm test
 
 The development server will start at http://localhost:9000 and automatically reload when you make changes.
 
+### Compatibility Notes
+
+The plugin includes a warning suppression utility for versions of Mirador prior to 4.0.0 that use a deprecated Material-UI Badge prop. This suppression:
+
+- Suppresses the `overlap="rectangle"` deprecation warning
+- Notes if the suppression file is no longer needed
+- Can be deleted once this app is upgraded to Mirador version 4.0.0 or later where the issue is fixed
+
+The warning suppression is implemented in `src/plugins/utils/suppressWarnings.js`.
+
 ### Testing
 
 The plugin includes comprehensive tests using Jest and React Testing Library. The test suite is organized by responsibility:
