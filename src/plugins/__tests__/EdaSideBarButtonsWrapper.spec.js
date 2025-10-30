@@ -131,8 +131,9 @@ describe("EdaSideBarButtonsWrapper", () => {
     })
 
     it("should display the EDA button", () => {
-      const button = screen.getByAltText("EDA Transcriptions")
-      expect(button).toBeInTheDocument()
+      createWrapper(true)
+      const icons = screen.queryAllByTestId("eda-transcription-icon")
+      expect(icons.length).toBeGreaterThan(0)
     })
   })
 

@@ -1,18 +1,14 @@
 import React from "react"
-import edaIcon from "../assets/ornament-large.png"
+import TitleIcon from "@material-ui/icons/Title"
 
 /**
- * A button component that displays the EDA icon for the EDA Transcriptions companion window
+ * A button component that displays a T icon
+ * The button triggers the opening of the EDA Transcriptions companion window 
  */
 
 const EdaTranscriptionButton = () => {
   return (
-    <img
-      src={edaIcon}
-      alt="EDA Transcriptions"
-      style={{ height: "1.5rem", width: "1.5rem" }}
-      value="edaTranscription"
-    />
+    <TitleIcon data-testid="eda-transcription-icon" />
   )
 }
 
