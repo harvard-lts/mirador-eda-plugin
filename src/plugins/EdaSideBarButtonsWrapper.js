@@ -29,17 +29,15 @@ const EdaSideBarButtonsWrapper = ({ TargetComponent, ...targetProps }) => {
     return originalTranslation(key, opts)
   }
 
-  // if transcriptions exist, add EDA Transcriptions button and hide Annotations button
-  const plugin = hasTranscriptions
-    ? [...(targetProps.PluginComponents || []), EdaTranscriptionButton]
-    : targetProps.PluginComponents
+  // if transcriptions exist, return the EDA Transcriptions button and hide all other plugin buttons
+  const edaPlugin = hasTranscriptions ? [EdaTranscriptionButton] : targetProps.PluginComponents
 
   return (
     <TargetComponent
       {...targetProps}
       t={customTranslation}
       panels={{ ...targetProps.panels, annotations: !hasTranscriptions }}
-      PluginComponents={plugin}
+      PluginComponents={edaPlugin}
     />
   )
 }
