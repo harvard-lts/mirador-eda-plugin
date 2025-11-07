@@ -1,4 +1,4 @@
-import React, { useMemo } from "react"
+import React from "react"
 import { useSelector, shallowEqual } from "react-redux"
 import { getEdaTranscription } from "./transcriptionUtils"
 import EdaTranscriptionButton from "./EdaTranscriptionButton"
@@ -16,7 +16,7 @@ const EdaSideBarButtonsWrapper = ({ TargetComponent, ...targetProps }) => {
   // shallowEqual prevents re-renders unless transcriptions actually change
   const transcriptions = useSelector(state => getEdaTranscription(state, targetProps.windowId), shallowEqual)
   const hasTranscriptions = Boolean(transcriptions && transcriptions.length > 0)
-  console.log("EDA transcriptions available:", hasTranscriptions);
+
   // sets the translation for the EDA Transcriptions button tooltip
   const customTranslation = (key, opts) => {
     if (key === "openCompanionWindow" &&
