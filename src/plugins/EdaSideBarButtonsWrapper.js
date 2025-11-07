@@ -36,7 +36,6 @@ const EdaSideBarButtonsWrapper = ({ TargetComponent, ...targetProps }) => {
     <TargetComponent
       {...targetProps}
       t={customTranslation}
-      panels={{ ...targetProps.panels, annotations: !hasTranscriptions }}
       PluginComponents={edaPlugin}
     />
   )
