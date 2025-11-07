@@ -68,11 +68,8 @@ const EdaTranscriptionPanel = ({ classes, transcriptions, windowId, id }) => {
       {(!transcriptions || transcriptions.length === 0) && (
         <div className={classes.root}>
           <div className={classes.section}>
-            <Typography variant="body1" className={classes.noTranscriptionsMessage1}>
-              No Emily Dickinson Archive transcriptions are available for this manifest.
-            </Typography>
-            <Typography variant="body2" className={classes.noTranscriptionsMessage2}>
-              This feature is only available for items from the Emily Dickinson Archive.
+            <Typography variant="body1" className={classes.noTranscriptionsMessage}>
+              Emily Dickinson Archive transcriptions are not available for this manuscript.
             </Typography>
           </div>
         </div>
@@ -237,12 +234,9 @@ const styles = (theme) => ({
       display: "block !important",
     },
   },
-  noTranscriptionsMessage1: {
+  noTranscriptionsMessage: {
     padding: "16px"
-  },
-  noTranscriptionsMessage2: {
-    padding: "0 16px 16px"
-  },
+  }
 })
 
 const mapStateToProps = (state, { windowId }) => ({
