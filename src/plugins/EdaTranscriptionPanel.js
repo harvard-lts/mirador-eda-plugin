@@ -137,7 +137,12 @@ const EdaTranscriptionPanel = ({ classes, transcriptions, windowId, id }) => {
 const styles = (theme) => ({
   "@global": {
     ".react-draggable": {
-      minWidth: "350px !important", // this must match the paper minWidth
+      [theme.breakpoints.down("sm")]: {
+        minWidth: "280px !important",
+      },
+      [theme.breakpoints.up("sm")]: {
+        minWidth: "350px !important",
+      }
     }
   },
   root: {
@@ -147,7 +152,12 @@ const styles = (theme) => ({
     flexDirection: "column",
   },
   paper: {
-    minWidth: "350px", // this must match the companion window minWidth
+    [theme.breakpoints.down("sm")]: {
+      minWidth: "280px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      minWidth: "350px",
+    }
   },
   controls: {
     padding: theme.spacing(2),
@@ -164,7 +174,12 @@ const styles = (theme) => ({
     fontSize: "0.875rem",
   },
   selectInput: {
-    width: 300
+    [theme.breakpoints.down("sm")]: {
+      width: 230
+    },
+    [theme.breakpoints.up("sm")]: {
+      width: 300
+    }
   },
   section: {
     flex: 1,
