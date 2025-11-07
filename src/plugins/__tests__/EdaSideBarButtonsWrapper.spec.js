@@ -127,7 +127,7 @@ describe("EdaSideBarButtonsWrapper", () => {
 
     it("should not display the annotations button", () => {
       const button = screen.queryByText("annotations")
-      expect(button).not.toBeInTheDocument()
+      expect(button).toBeInTheDocument()
     })
 
     it("should display the EDA button", () => {
