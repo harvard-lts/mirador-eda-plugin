@@ -68,11 +68,8 @@ const EdaTranscriptionPanel = ({ classes, transcriptions, windowId, id }) => {
       {(!transcriptions || transcriptions.length === 0) && (
         <div className={classes.root}>
           <div className={classes.section}>
-            <Typography variant="body1" className={classes.noTranscriptionsMessage1}>
-              No Emily Dickinson Archive transcriptions are available for this manifest.
-            </Typography>
-            <Typography variant="body2" className={classes.noTranscriptionsMessage2}>
-              This feature is only available for items from the Emily Dickinson Archive.
+            <Typography variant="body1" className={classes.noTranscriptionsMessage}>
+              Emily Dickinson Archive transcriptions are not available for this manuscript.
             </Typography>
           </div>
         </div>
@@ -140,7 +137,12 @@ const EdaTranscriptionPanel = ({ classes, transcriptions, windowId, id }) => {
 const styles = (theme) => ({
   "@global": {
     ".react-draggable": {
-      minWidth: "350px !important", // this must match the paper minWidth
+      [theme.breakpoints.down("sm")]: {
+        minWidth: "235px !important",
+      },
+      [theme.breakpoints.up("sm")]: {
+        minWidth: "350px !important", // this must match the paper minWidth
+      }
     }
   },
   root: {
@@ -150,7 +152,13 @@ const styles = (theme) => ({
     flexDirection: "column",
   },
   paper: {
-    minWidth: "350px", // this must match the companion window minWidth
+    [theme.breakpoints.down("sm")]: {
+      minWidth: "235px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      minWidth: "350px", // this must match the companion window minWidth
+
+    }
   },
   controls: {
     padding: theme.spacing(2),
@@ -167,7 +175,12 @@ const styles = (theme) => ({
     fontSize: "0.875rem",
   },
   selectInput: {
-    width: 300
+    [theme.breakpoints.down("sm")]: {
+      width: 230
+    },
+    [theme.breakpoints.up("sm")]: {
+      width: 300
+    }
   },
   section: {
     flex: 1,
@@ -221,12 +234,9 @@ const styles = (theme) => ({
       display: "block !important",
     },
   },
-  noTranscriptionsMessage1: {
+  noTranscriptionsMessage: {
     padding: "16px"
-  },
-  noTranscriptionsMessage2: {
-    padding: "0 16px 16px"
-  },
+  }
 })
 
 const mapStateToProps = (state, { windowId }) => ({
