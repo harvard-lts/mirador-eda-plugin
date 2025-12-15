@@ -1,6 +1,6 @@
 {
   "name": "@harvard-lts/mirador-eda-plugin",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A Mirador plugin for displaying Emily Dickinson Archive transcriptions with toggleable line breaks and editorial marks",
   "module": "dist/es/index.js",
   "files": [
