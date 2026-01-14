@@ -6,7 +6,7 @@ import EdaSideBarButtonsWrapper from "../EdaSideBarButtonsWrapper"
 import { getEdaTranscription } from "../transcriptionUtils"
 
 // Mock transcriptionUtils
-jest.mock("../transcriptionUtils", () => ({
+vi.mock("../transcriptionUtils", () => ({
   getEdaTranscription: jest.fn()
 }))
 

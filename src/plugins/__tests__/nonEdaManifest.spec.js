@@ -18,7 +18,7 @@ const harvardManifest = {
   ]
 }
 
-jest.mock("../transcriptionUtils")
+vi.mock("../transcriptionUtils")
 
 describe("Non-Emily Dickinson manifest", () => {
   beforeEach(() => {

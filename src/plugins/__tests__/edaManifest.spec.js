@@ -3,7 +3,7 @@ import React from "react"
 import { getEdaTranscription } from "../transcriptionUtils"
 
 // Mock the transcriptionUtils
-jest.mock("../transcriptionUtils")
+vi.mock("../transcriptionUtils")
 
 describe("Emily Dickinson Manifest Support", () => {
   // Sample Emily Dickinson manifest based on the demo files
