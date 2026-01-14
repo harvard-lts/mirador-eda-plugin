@@ -22,7 +22,7 @@ vi.mock("../transcriptionUtils")
 
 describe("Non-Emily Dickinson manifest", () => {
   beforeEach(() => {
-    jest.clearAllMocks()
+    vi.clearAllMocks()
   })
 
   it("should return empty transcriptions array", () => {
@@ -50,7 +50,7 @@ describe("Non-Emily Dickinson manifest", () => {
   })
 
   it("should handle transcription request for non-EDA manifests", () => {
-    const handleClickMock = jest.fn().mockReturnValue("panel-opened")
+    const handleClickMock = vi.fn().mockReturnValue("panel-opened")
 
     const props = {
       transcriptions: [], // Empty for non-EDA manifests
