@@ -9,7 +9,7 @@ const styles = () => ({ section: "section", controls: "controls", formControl: "
 const StyledPanel = withStyles(styles)(EdaTranscriptionPanel.component)
 
 // Mock the CompanionWindow component from Mirador to avoid theme dependency issues
-jest.mock("mirador/dist/es/src/containers/CompanionWindow", () => ({
+vi.mock("mirador/dist/es/src/containers/CompanionWindow", () => ({
   __esModule: true,
   default: ({ children, title }) => (
     <div

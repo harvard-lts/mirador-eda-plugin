@@ -1,9 +1,9 @@
-/** @jest-environment jsdom */
+/** @vitest-environment jsdom */
 import React from "react"
 import { getEdaTranscription } from "../transcriptionUtils"
 
 // Mock the transcriptionUtils
-jest.mock("../transcriptionUtils")
+vi.mock("../transcriptionUtils")
 
 describe("Emily Dickinson Manifest Support", () => {
   // Sample Emily Dickinson manifest based on the demo files
@@ -35,7 +35,7 @@ describe("Emily Dickinson Manifest Support", () => {
   describe("transcription extraction", () => {
     beforeEach(() => {
       // Reset all mocks before each test
-      jest.clearAllMocks()
+      vi.clearAllMocks()
     })
 
     it("should identify EDA transcriptions from manifest", () => {

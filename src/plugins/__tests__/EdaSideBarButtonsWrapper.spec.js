@@ -1,4 +1,4 @@
-/** @jest-environment jsdom */
+/** @vitest-environment jsdom */
 import React from "react"
 import { render, screen } from "@testing-library/react"
 import { Provider } from "react-redux"
@@ -6,8 +6,8 @@ import EdaSideBarButtonsWrapper from "../EdaSideBarButtonsWrapper"
 import { getEdaTranscription } from "../transcriptionUtils"
 
 // Mock transcriptionUtils
-jest.mock("../transcriptionUtils", () => ({
-  getEdaTranscription: jest.fn()
+vi.mock("../transcriptionUtils", () => ({
+  getEdaTranscription: vi.fn()
 }))
 
 // Mock base components that would be provided by Mirador
@@ -56,8 +56,8 @@ describe("EdaSideBarButtonsWrapper", () => {
     // Mock store
     const store = {
       getState: () => ({}),
-      subscribe: jest.fn(),
-      dispatch: jest.fn()
+      subscribe: vi.fn(),
+      dispatch: vi.fn()
     }
 
     // Get the wrapped component from the plugin config
@@ -148,7 +148,7 @@ describe("EdaSideBarButtonsWrapper", () => {
 
       const { component: Wrapped } = EdaSideBarButtonsWrapper
       render(
-        <Provider store={{ getState: () => ({}), subscribe: jest.fn(), dispatch: jest.fn() }}>
+        <Provider store={{ getState: () => ({}), subscribe: vi.fn(), dispatch: vi.fn() }}>
           <Wrapped
             TargetComponent={MockComponent}
             t={(key) => key}
@@ -169,7 +169,7 @@ describe("EdaSideBarButtonsWrapper", () => {
 
       const { component: Wrapped } = EdaSideBarButtonsWrapper
       render(
-        <Provider store={{ getState: () => ({}), subscribe: jest.fn(), dispatch: jest.fn() }}>
+        <Provider store={{ getState: () => ({}), subscribe: vi.fn(), dispatch: vi.fn() }}>
           <Wrapped
             TargetComponent={MockComponent}
             t={(key) => key}
