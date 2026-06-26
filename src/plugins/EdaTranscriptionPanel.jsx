@@ -159,6 +159,19 @@ const EdaTranscriptionPanel = ({ transcriptions, windowId, id }) => {
         windowId={windowId}
         id={id}
         paperClassName={PAPER_CLASS}
+        // Mirador exports the UNconnected CompanionWindow (`Nw`) as
+        // `CompanionWindow`; the connected variant (`ii`) that maps these from
+        // the companion-window's Redux record is internal and not exported. So
+        // we must supply them ourselves — without isDisplayed the paper renders
+        // with `display: none` and collapses to 0×0 (only the ins:before/after
+        // "[]" marks leak through), and without position it docks as "null"
+        // instead of in the left sidebar.
+        isDisplayed
+        position="left"
+        // `direction` is normally injected by the connected wrapper from the
+        // viewer's text-direction state; the unconnected component reads
+        // O[direction].opposite and throws on undefined, so default it to ltr.
+        direction="ltr"
       >
         {/* handle the case when the panel is opened but no transcriptions exist */}
         {(!transcriptions || transcriptions.length === 0) && (

@@ -130,11 +130,10 @@ describe("EdaSideBarButtonsWrapper", () => {
       expect(button).not.toBeInTheDocument()
     })
 
-    it("should display the EDA button", () => {
-      createWrapper(true)
-      const icons = screen.queryAllByTestId("eda-transcription-icon")
-      expect(icons.length).toBeGreaterThan(0)
-    })
+    // Note: the EDA Transcriptions button itself is no longer injected by this
+    // wrapper. In Mirador 4 the sidebar builds its tabs from the plugin
+    // registry, so EdaTranscriptionButton registers as its own "add" plugin and
+    // is covered by EdaTranscriptionButton.spec.jsx.
   })
 
   describe("translations", () => {
