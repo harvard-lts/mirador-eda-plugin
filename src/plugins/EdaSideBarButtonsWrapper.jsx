@@ -1,7 +1,6 @@
-import React from "react"
 import { useSelector, shallowEqual } from "react-redux"
 import { getEdaTranscription } from "./transcriptionUtils"
-import EdaTranscriptionButton from "./EdaTranscriptionButton"
+import EdaTranscriptionButton from "./EdaTranscriptionButton.jsx"
 
 // /**
 //  * Wrapper for the WindowSideBarButtons component
@@ -43,6 +42,7 @@ const EdaSideBarButtonsWrapper = ({ TargetComponent, ...targetProps }) => {
 }
 
 export default {
+  name: "EdaSideBarButtonsWrapper",
   target: "WindowSideBarButtons",
   mode: "wrap",
   component: EdaSideBarButtonsWrapper

@@ -1,5 +1,4 @@
-import React from "react"
-import TitleIcon from "@material-ui/icons/Title"
+import TitleIcon from "@mui/icons-material/Title"
 
 /**
  * A button component that displays a T icon

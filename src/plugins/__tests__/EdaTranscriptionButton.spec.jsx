@@ -1,7 +1,7 @@
 /** @vitest-environment jsdom */
 import React from "react"
 import { render, screen } from "@testing-library/react"
-import EdaTranscriptionButton from "../EdaTranscriptionButton"
+import EdaTranscriptionButton from "../EdaTranscriptionButton.jsx"
 
 describe("EdaTranscriptionButton", () => {
   it("should render with a TitleIcon", () => {

@@ -2,7 +2,7 @@
 import React from "react"
 import { render, screen } from "@testing-library/react"
 import { Provider } from "react-redux"
-import EdaSideBarButtonsWrapper from "../EdaSideBarButtonsWrapper"
+import EdaSideBarButtonsWrapper from "../EdaSideBarButtonsWrapper.jsx"
 import { getEdaTranscription } from "../transcriptionUtils"
 
 // Mock transcriptionUtils

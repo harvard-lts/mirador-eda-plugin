@@ -2,16 +2,11 @@ import { render, screen, fireEvent } from "@testing-library/react"
 import { Provider } from "react-redux"
 import { configureStore } from "@reduxjs/toolkit"
 import '@testing-library/jest-dom'
-import { withStyles } from "@material-ui/core/styles"
-import EdaTranscriptionPanel from "../EdaTranscriptionPanel"
 
-const styles = () => ({ section: "section", controls: "controls", formControl: "formControl", editionLabel: "editionLabel" })
-const StyledPanel = withStyles(styles)(EdaTranscriptionPanel.component)
-
-// Mock the CompanionWindow component from Mirador to avoid theme dependency issues
-vi.mock("mirador/dist/es/src/containers/CompanionWindow", () => ({
-  __esModule: true,
-  default: ({ children, title }) => (
+// Mock the CompanionWindow component from Mirador to avoid theme/canvas
+// dependency issues. Mirador 4 exposes CompanionWindow at the top level.
+vi.mock("mirador", () => ({
+  CompanionWindow: ({ children, title }) => (
     <div
       data-testid="mock-companion-window"
       className="mirador-companion-window mirador-companion-window-right react-draggable"
@@ -26,6 +21,11 @@ vi.mock("mirador/dist/es/src/containers/CompanionWindow", () => ({
     </div>
   )
 }))
+
+import EdaTranscriptionPanel from "../EdaTranscriptionPanel.jsx"
+
+const Panel = EdaTranscriptionPanel.component
+
 import johnsonPoems1955 from "../testFixtures/johnsonPoems1955Transcription"
 import franklinVariorum1998 from "../testFixtures/franklinVariorum1998Transcription"
 
@@ -58,7 +58,7 @@ function renderPanel({ transcriptions = [johnsonPoems1955, franklinVariorum1998]
   const store = configureStore({ reducer, preloadedState })
   return render(
     <Provider store={store}>
-      <StyledPanel windowId={windowId} classes={styles()} />
+      <Panel windowId={windowId} />
     </Provider>
   )
 }
@@ -102,20 +102,20 @@ describe("the EdaTranscriptionPanel should", () => {
 describe("the EdaTranscriptionPanel editions select menu should", () => {
   it("render if there is at least one transcription", () => {
     renderPanel({ transcriptions: [johnsonPoems1955] })
-    // The select should be present
-    expect(screen.getByRole("button")).toBeInTheDocument()
+    // The select should be present (MUI 7 uses role="combobox" for the trigger)
+    expect(screen.getByRole("combobox")).toBeInTheDocument()
   })
 
   it("be disabled if there is only one transcription", () => {
     renderPanel({ transcriptions: [johnsonPoems1955] })
-    const select = screen.getByRole("button")
+    const select = screen.getByRole("combobox")
     // Material-UI handles disabled state differently in tests
     expect(select.getAttribute("aria-disabled")).toBe("true")
   })
 
   it("be enabled if there are multiple transcriptions", () => {
     renderPanel({ transcriptions: [johnsonPoems1955, franklinVariorum1998] })
-    const select = screen.getByRole("button")
+    const select = screen.getByRole("combobox")
     // For enabled state, Material-UI might not set aria-disabled at all
     expect(select.getAttribute("aria-disabled")).not.toBe("true")
   })
@@ -127,7 +127,7 @@ describe("the EdaTranscriptionPanel editions select menu should", () => {
 
   it("change when a new edition is selected", () => {
     renderPanel()
-    const select = screen.getByRole("button")
+    const select = screen.getByRole("combobox")
     fireEvent.mouseDown(select)
     const edition2 = screen.getAllByText("Franklin Variorum 1998")[0]
     fireEvent.click(edition2)
