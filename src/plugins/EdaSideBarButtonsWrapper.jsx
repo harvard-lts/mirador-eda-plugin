@@ -1,12 +1,18 @@
-import React from "react"
 import { useSelector, shallowEqual } from "react-redux"
 import { getEdaTranscription } from "./transcriptionUtils"
-import EdaTranscriptionButton from "./EdaTranscriptionButton"
 
 // /**
-//  * Wrapper for the WindowSideBarButtons component
-//  * Sets "EDA Transcriptions" for the tooltip text translations for EDA Transcriptions button
-//  * Hides the Annotation button when EDA transcriptions are available
+//  * Wrapper for the WindowSideBarButtons component.
+//  * Sets "EDA Transcriptions" for the tooltip text translations for the EDA
+//  * Transcriptions button, and hides the Annotations tab when EDA transcriptions
+//  * are available.
+//  *
+//  * The EDA Transcriptions button itself is NOT injected here. In Mirador 4,
+//  * WindowSideBarButtons builds its plugin tabs from the global plugin registry
+//  * (mode: "add" plugins targeting WindowSideBarButtons) and ignores any
+//  * PluginComponents passed via props. EdaTranscriptionButton therefore registers
+//  * itself as its own plugin (see EdaTranscriptionButton.jsx).
+//  *
 //  * @param {Object} props - Component props
 //  * @param {React.Component} props.TargetComponent - The component to wrap
 //  * @param {Object} props.targetProps - Other props passed to the component
@@ -29,20 +35,17 @@ const EdaSideBarButtonsWrapper = ({ TargetComponent, ...targetProps }) => {
     return originalTranslation(key, opts)
   }
 
-  // if transcriptions exist, add EDA Transcriptions button
-  const plugin = hasTranscriptions ? [EdaTranscriptionButton] : targetProps.PluginComponents
-
   return (
     <TargetComponent
       {...targetProps}
       t={customTranslation}
       panels={{ ...targetProps.panels, annotations: !hasTranscriptions }}
-      PluginComponents={plugin}
     />
   )
 }
 
 export default {
+  name: "EdaSideBarButtonsWrapper",
   target: "WindowSideBarButtons",
   mode: "wrap",
   component: EdaSideBarButtonsWrapper

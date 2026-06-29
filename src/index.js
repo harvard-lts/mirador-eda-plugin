@@ -1,15 +1,15 @@
-import EdaTranscriptionPanel from "./plugins/EdaTranscriptionPanel"
-import EdaSideBarButtonsWrapper from "./plugins/EdaSideBarButtonsWrapper"
+import EdaTranscriptionPanel from "./plugins/EdaTranscriptionPanel.jsx"
+import EdaSideBarButtonsWrapper from "./plugins/EdaSideBarButtonsWrapper.jsx"
+import EdaTranscriptionButton from "./plugins/EdaTranscriptionButton.jsx"
 
-// suppressing a console warning message that has been fixed in Mirador v4
-import "./plugins/utils/suppressWarnings"
-
-export { 
+export {
   EdaSideBarButtonsWrapper,
+  EdaTranscriptionButton,
   EdaTranscriptionPanel
 };
 
 export default [
   EdaSideBarButtonsWrapper,
+  EdaTranscriptionButton,
   EdaTranscriptionPanel
 ];

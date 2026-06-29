@@ -1,6 +1,24 @@
 # Mirador EDA Plugin
 
-A Mirador 3 plugin for displaying Emily Dickinson Archive (EDA) transcriptions with toggleable line breaks and editorial marks. This plugin replicates the viewing experience of [edickinson.org](https://www.edickinson.org) while gracefully handling non-Emily Dickinson manifests.
+[![Node Unit Tests](https://github.com/harvard-lts/mirador-eda-plugin/actions/workflows/coverage-node.yml/badge.svg)](https://github.com/harvard-lts/mirador-eda-plugin/actions/workflows/coverage-node.yml)
+
+<a href="https://github.com/harvard-lts/mirador-eda-plugin/actions/workflows/coverage-node.yml"><img src="https://github.com/harvard-lts/mirador-eda-plugin/raw/badges/test-coverage/coverage.svg"></a>
+
+A Mirador plugin for displaying Emily Dickinson Archive (EDA) transcriptions with toggleable line breaks and editorial marks. This plugin replicates the viewing experience of [edickinson.org](https://www.edickinson.org) while gracefully handling non-Emily Dickinson manifests.
+
+## Compatibility
+
+This plugin is **Mirador 4-compatible** (React 18/19, MUI 7 + Emotion). It is
+**not** backwards compatible with Mirador 3 — the upgrade contains breaking
+changes: top-level `mirador` imports (the deep `mirador/dist/es/src/...` paths no
+longer resolve), function/hook components, and MUI 7 + Emotion styling in place
+of Material-UI 4 + JSS.
+
+Versioning convention for pinning:
+
+- **Mirador 4** releases are tagged `2.x`.
+- **Mirador 3** releases are tagged `0.x` / `1.x` — pin one of these if you still
+  need Mirador 3.
 
 ## Features
 
@@ -15,8 +33,8 @@ A Mirador 3 plugin for displaying Emily Dickinson Archive (EDA) transcriptions w
 ## Requirements
 
 - [NVM](https://github.com/nvm-sh/nvm)
-- Node.js 14+
-- Mirador 3.x
+- Node.js 22+ (see `.nvmrc`)
+- Mirador 4.x
 
 ## Setup
 
@@ -35,7 +53,7 @@ The following are some useful scripts can be ran using `npm run <script>`. A ful
 
 ## Installing in Mirador
 
-The `@harvard-lts/mirador-eda-plugin` requires an instance of Mirador 3. Visit the [Mirador wiki](https://github.com/ProjectMirador/mirador/wiki) to learn how to [install an existing plugin](https://github.com/ProjectMirador/mirador/wiki/Mirador-3-plugins#installing-an-existing-plugin) and for additional information about plugins.
+The `@harvard-lts/mirador-eda-plugin` requires an instance of Mirador 4. Visit the [Mirador wiki](https://github.com/ProjectMirador/mirador/wiki) and the [Creating a Mirador 4 Plugin](https://github.com/ProjectMirador/mirador/wiki/Creating-a-Mirador-4-Plugin) page for information about installing and building plugins.
 
 ### Installation
 
@@ -118,19 +136,9 @@ npm test
 
 The development server will start at http://localhost:9000 and automatically reload when you make changes.
 
-### Compatibility Notes
-
-The plugin includes a warning suppression utility for versions of Mirador prior to 4.0.0 that use a deprecated Material-UI Badge prop. This suppression:
-
-- Suppresses the `overlap="rectangle"` deprecation warning
-- Notes if the suppression file is no longer needed
-- Can be deleted once this app is upgraded to Mirador version 4.0.0 or later where the issue is fixed
-
-The warning suppression is implemented in `src/plugins/utils/suppressWarnings.js`.
-
 ### Testing
 
-The plugin includes comprehensive tests using Jest and React Testing Library. The test suite is organized by responsibility:
+The plugin includes comprehensive tests using Vitest and React Testing Library. The test suite is organized by responsibility:
 
 ```bash
 # Run all tests
@@ -143,9 +151,9 @@ npm test src/plugins/__tests__/[filename].spec.js
 Test Files and Responsibilities:
 
 #### Component Tests
-- `EdaTranscriptionButton.spec.js` - Tests button rendering, visibility, and interaction
-- `EdaTranscriptionPanel.spec.js` - Tests panel UI, transcription display, and controls
-- `EdaSideBarButtonsWrapper.spec.js` - Tests sidebar button container and layout
+- `EdaTranscriptionButton.spec.jsx` - Tests button rendering, visibility, and interaction
+- `EdaTranscriptionPanel.spec.jsx` - Tests panel UI, transcription display, and controls
+- `EdaSideBarButtonsWrapper.spec.jsx` - Tests sidebar button container and layout
 
 #### Manifest Tests
 - `edaManifest.spec.js` - Tests Emily Dickinson manifest handling and transcription extraction
